@@ -1,0 +1,67 @@
+.proj-theme-agustus .proj-headermain .proj-container {
+  background: url(../media/logo_agustus.jpg) no-repeat center left 190px; }
+  .proj-theme-agustus .proj-headermain .proj-container .proj-sm-airport-box .proj-container {
+    background: none; }
+.proj-theme-agustus section .proj-section_two {
+  background: url(../media/agustus_1.jpg) no-repeat bottom center/cover; }
+.proj-theme-agustus section .proj-section_four {
+  background: url(../media/agustus_2.jpg) no-repeat bottom center/cover; }
+.proj-theme-agustus footer .proj-footertop {
+  background: #ca1121; }
+
+.proj-theme-anniversary .proj-headermain .proj-container {
+  background: url(../media/logo_anniversary.png) no-repeat center left 190px; }
+  .proj-theme-anniversary .proj-headermain .proj-container .proj-sm-airport-box .proj-container {
+    background: none; }
+.proj-theme-anniversary section .proj-section_two {
+  background: url(../media/anniversary_1.jpg) no-repeat top center/cover; }
+.proj-theme-anniversary section .proj-section_four {
+  background: url(../media/anniversary_2.jpg) no-repeat top center/cover; }
+.proj-theme-anniversary section .proj-section_eight {
+  background: #fff url(../media/anniversary_3.png) no-repeat top center; }
+  .proj-theme-anniversary section .proj-section_eight h3 {
+    background: none; }
+.proj-theme-anniversary footer .proj-footertop {
+  background: #0081b9 url(../media/anniversary_4.png) no-repeat bottom center; }
+
+.proj-theme-chinesenewyear .proj-headermain .proj-container {
+  background: url(../media/logo_cny.png) no-repeat center left 190px; }
+  .proj-theme-chinesenewyear .proj-headermain .proj-container .proj-sm-airport-box .proj-container {
+    background: none; }
+.proj-theme-chinesenewyear section .proj-section_two {
+  background: #0081b9 url(../media/cny_1.png) no-repeat bottom center; }
+.proj-theme-chinesenewyear section .proj-section_four {
+  background: #e0ba60 url(../media/cny_2.png) no-repeat bottom center; }
+.proj-theme-chinesenewyear footer .proj-footertop {
+  background: #0081b9 url(../media/cny_2.png) no-repeat bottom center; }
+
+.proj-theme-christmas .proj-headermain .proj-container {
+  background: url(../media/logo_christmas.png) no-repeat center left; }
+  .proj-theme-christmas .proj-headermain .proj-container .proj-sm-airport-box .proj-container {
+    background: none; }
+.proj-theme-christmas section .proj-section_two {
+  background: #0081b9 url(../media/christmas_1.png) no-repeat bottom center; }
+.proj-theme-christmas section .proj-section_four {
+  background: url(../media/christmas_2.jpg) no-repeat bottom center/cover; }
+.proj-theme-christmas footer .proj-footertop {
+  background: #0081b9 url(../media/christmas_3.png) no-repeat bottom center; }
+
+.proj-theme-idulfitri .proj-headermain .proj-container {
+  background: url(../media/logo_idulfitri.png) no-repeat center left 190px; }
+  .proj-theme-idulfitri .proj-headermain .proj-container .proj-sm-airport-box .proj-container {
+    background: none; }
+.proj-theme-idulfitri section .proj-section_two {
+  background: url(../media/idulfitri_1.jpg) no-repeat top center, url(../media/idulfitri_1.jpg) no-repeat bottom center;
+  background-color: #0081b9; }
+.proj-theme-idulfitri section .proj-section_four {
+  background: url(../media/idulfitri_2.jpg) no-repeat bottom center/cover; }
+.proj-theme-idulfitri section .proj-section_eight {
+  background: #fff url(../media/idulfitri_1.jpg) no-repeat bottom center; }
+  .proj-theme-idulfitri section .proj-section_eight h3 {
+    background: none; }
+  .proj-theme-idulfitri section .proj-section_eight .proj-container {
+    margin-bottom: 30px; }
+.proj-theme-idulfitri footer .proj-footertop {
+  background: #0081b9 url(../media/idulfitri_3.png) no-repeat bottom center; }
+
+/*# sourceMappingURL=corporate-theme.css.map */

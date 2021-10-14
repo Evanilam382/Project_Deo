@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'helveticaneue';
+  src: url("../fonts/helveticaneue.woff2") format("woff2"), url("../fonts/helveticaneue.woff") format("woff"); }
+@font-face {
+  font-family: 'helveticaneuebd';
+  src: url("../fonts/helveticaneuebd.woff2") format("woff2"), url("../fonts/helveticaneuebd.woff") format("woff"); }
+@font-face {
+  font-family: 'helveticaneuelight';
+  src: url("../fonts/helveticaneuelight.woff2") format("woff2"), url("../fonts/helveticaneuelight.woff") format("woff"); }
+@font-face {
+  font-family: 'Dax';
+  src: url("../fonts/Dax.woff2") format("woff2"), url("../fonts/Dax.woff") format("woff"); }
+@font-face {
+  font-family: 'GothamNarrowBook';
+  src: url("../fonts/GothamNarrowBook.woff2") format("woff2"), url("../fonts/GothamNarrowBook.woff") format("woff"); }
+@font-face {
+  font-family: 'GothamNarrowBold';
+  src: url("../fonts/GothamNarrowBold.woff2") format("woff2"), url("../fonts/GothamNarrowBold.woff") format("woff"); }
+@font-face {
+  font-family: 'GothamNarrowLight';
+  src: url("../fonts/GothamNarrowLight.woff2") format("woff2"), url("../fonts/GothamNarrowLight.woff") format("woff"); }
+@font-face {
+  font-family: 'hinted-BodoniFLF-Roman';
+  src: url("../fonts/hinted-BodoniFLF-Roman.woff2") format("woff2"), url("../fonts/hinted-BodoniFLF-Roman.woff") format("woff"); }
+
+/*# sourceMappingURL=fontface.css.map */

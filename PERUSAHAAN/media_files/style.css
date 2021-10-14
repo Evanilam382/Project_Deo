@@ -1,0 +1,169 @@
+.d-flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.float-bar {
+    /* background-image: url('../img/floating-bar.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; */
+    max-height: 100px;
+    width: auto;
+    background-color: #fff;
+    display: flex;
+    position: static;
+    /* padding: 1.5em; */
+    padding-bottom: 30px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.i-icon {
+    margin: auto;
+}
+.i-icon > img {
+    width: 60px;
+    height: 60px;
+}
+
+.x-close {
+    margin: auto;
+    color: rgb(46, 46, 46);
+    -webkit-transition-duration:1s;
+    transition-duration:1s;
+}
+.x-close:hover {
+    opacity: 2;
+    color: black;
+    transform: rotate(180deg);
+}
+.x-close:before {
+    transform: rotate(45deg);
+}
+.x-close:after {
+    transform: rotate(-45deg);
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    flex-grow: 1;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Fading animation */
+.slideshow-fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* unvisited link */
+.mySlides a:link {
+  color: rgb(68, 115, 216);
+}
+
+/* visited link */
+.mySlides a:visited {
+  color: rgb(25, 0, 255);
+}
+
+/* mouse over link */
+.mySlides a:hover {
+  color: rgb(25, 0, 255);
+}
+
+/* selected link */
+.mySlides a:active {
+  color: rgb(25, 0, 255);
+}
+
+
+
+/* Left image */
+.float-bar div.img-left {
+    background-image: url('../img/float-bar-left.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 72px;
+    width: 120px;
+    
+}
+
+/* Right image */
+.float-bar div.img-right {
+    background-image: url('../img/float-bar-right.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 72px;
+    width: 120px;
+}
+
+@media only screen and (max-width: 1129px) {
+    .float-bar {
+        /* background-image: url('../img/floating-bar.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain; */
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        max-height: 100px;
+        width: auto;
+        background-color: #fff;
+        display: flex;
+        position: fixed;
+        /* padding: 1.5em; */
+        padding-bottom: 0px;
+        text-align: center;
+        justify-content: space-evenly;
+        font-size: 12px;
+    }
+
+    /* Left image */
+    .float-bar div.img-left {
+        background-image: url('../img/float-bar-left.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 51px;
+        width: 164px;
+        
+    }
+
+    /* Right image */
+    .float-bar div.img-right {
+        background-image: url('../img/float-bar-right.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 51px;
+        width: 164px;
+    }
+
+    .i-icon > img {
+        width: 30px;
+        height: 30px;
+    }
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://interacton4.infomedia.co.id:3000/ap2/ -->
+<html class="js sizes customelements history pointerevents postmessage webgl websockets cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox picture srcset webworkers" lang="en" style="--main-color:#66B22E; --main-color-dark:#0C803D; --main-color-input:#D1E8C1; --bubble-chat:#A1EA6C; --font-color:#343a40;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta Tags -->
+  
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Page Title -->
+  <title>Live Chat</title>
+  <!-- Favicon Icon -->
+  <!-- Plugins css -->
+  
+  <!-- LOAD CONFIG -->
+  <script src="./config.js.download"></script>
+
+  <link rel="stylesheet" type="text/css" href="./bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./flaticon.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="assets/flaticon/font/flaticon.css" /> -->
+  <link rel="stylesheet" type="text/css" href="./mdb.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="assets/MDB/css/mdb.css" /> -->
+  <link rel="stylesheet" type="text/css" href="./style.min.css" id="mode-option">
+  <!-- <link rel="stylesheet" type="text/css" href="assets/custom/widget.min.css" /> -->
+  <link rel="stylesheet" type="text/css" href="./widget.css">
+  
+<style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style><script type="text/javascript" charset="UTF-8" src="./common.js.download"></script><script type="text/javascript" charset="UTF-8" src="./util.js.download"></script><script type="text/javascript" charset="UTF-8" src="./AuthenticationService.Authenticate"></script></head>
+
+<body class="">
+  <!-- Start Toggle Chat -->
+  <div class="tb-toggle-chat-wrap">
+    <div class="tb-live-chat-wrap">
+      <div class="tb-live-chat-heading theme-color">
+        <div class="tb-live-chat-user title-livechat ">
+          Live Chat
+        </div>
+        <div id="end-chat-button" class="tb-live-chat-heading-btn">
+          <i class="flaticon-minus"></i>
+        </div>
+      </div>
+      <div class="tb-live-chat-body">
+        <div class="tb-chat-conversation tb-live-chat tb-style2">
+          <!-- CHAT ROOM -->
+          <ul id="conversation-list" class="tb-reverse-scroll tb-conversation-list">
+            <!-- WAITING VIEW -->
+            <div class="notif-pic waiting-mode" id="waiting-mode">
+              <h5 class="notif-title">Welcome to Livechat</h5>
+              <img src="./waiting-chat.png" alt="" width="125">
+              <p class="notif-text" style="margin-bottom: 0px;margin-top: 10px;">
+                Thank you for waiting us!<br>We appreciate your patience for holding
+              </p>
+              <div class="loadingio-spinner-message-jzb5adohjd">
+                <div class="ldio-zcu7fxzzguc">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <!-- END WAITING VIEW-->
+            <!-- BUSY VIEW -->
+            <div class="notif-pic busy-mode" id="busy-mode" style="display: none;">
+              <img src="./busy-chat.png" alt="" width="40">
+              <p style="margin-top: 20px;" class="notif-text bold">We are very sorry,<br>but all our agents are engaged
+                right now<br>Please leave an offline
+                message</p>
+              <button onclick="INF_reload()" class="btn btn-success btn-livechat minword theme-color waves-effect waves-light"><b>OK</b></button>
+            </div>
+            <div class="notif-pic unauthorized-mode" id="unauthorized-mode" style="display: none;">
+              <img src="./busy-chat.png" alt="" width="40">
+              <p class="notif-text bold">
+                You already have another active chat window<br>to see the messages please use that active window
+              </p>
+            </div>
+            <!-- END BUSY VIEW-->
+          </ul>
+          <!-- END CHAT ROOM -->
+
+          <!-- INPUT FORM -->
+          <div class="tb-conversion-input" id="input-group" style="display: none;">
+            <div class="tb-custom-input-area">
+              <div id="input-chat" class="tb-custom-input-field tb-chat-input" contenteditable="false" data-placeholder="Type your message here"></div>
+            </div>
+            <ul class="tb-icon-group tb-style1 tb-mp0">
+              <li id="location-list" style="display: list-item;">
+                <a id="location-list-button" class="tb-icon-group-icon input-icon"><i class="icon-livechat flaticon-minimize"></i></a>
+              </li>
+              <!-- <li>
+                <a id="emoticon-button" class="tb-icon-group-icon input-icon"><i class="icon-livechat flaticon-smile"></i></a>
+              </li> -->
+              <li class="file-attachment">
+                <label for="attachment">
+                  <a class="tb-icon-group-icon input-icon"><i class="icon-livechat flaticon-attach"></i></a>
+                </label>
+                <input id="attachment" name="attachment" type="file">
+              </li>
+              <li>
+                <a id="send-button" class="tb-icon-group-icon input-icon"><i class="icon-livechat flaticon-send"></i></a>
+              </li>
+            </ul>
+          </div>
+          <!-- END INPUT FORM -->
+        </div>
+        <!-- .tb-chat-conversation -->
+        <div class="tb-live-chat-list-wrap tb-style1">
+          <div class="tb-card-body">
+            <div class="logo-livechat">
+              <img src="./logo.jpg" alt="" width="150">
+              <div>
+                <small class="logo-text">Please fill out the form below to begin chatting with us</small>
+              </div>
+            </div>
+            <div class="tb-padd-lr-15 tb-alert-wrap">
+              <form id="form-start-chat">
+                <div class="md-form md-outline form-sm form-livechat">
+                  <input required="" id="username" name="username" class="form-control form-control-sm textbox-chat" type="text">
+                  <label for="username">Name</label>
+                </div>
+                <div class="md-form md-outline form-sm form-livechat">
+                  <input required="" id="email" name="email" class="form-control form-control-sm" type="email">
+                  <label for="email">Email</label>
+                </div>
+                <div class="md-form md-outline form-sm form-livechat">
+                  <input required="" id="mobilePhone" name="mobilePhone" class="form-control form-control-sm" type="text">
+                  <label for="mobilePhone">Mobile Phone</label>
+                </div>
+                <select required="" id="gender" name="gender" class="form-sm custom-select custom-select-sm form-livechat-select form-livechat-select-after-input">
+                  <option disabled="" selected="" value="">- Please Select Gender -</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+                <!--
+                <select required id="type" name="type"
+                  class="form-sm custom-select custom-select-sm form-livechat-select">
+                  <option disabled selected value>- Please Select Type -</option>
+                  <option value="type 1">Type 1</option>
+                  <option value="type 2">Type 2</option>
+                </select>-->
+                <button style="float: right;margin-top: 10px;margin-right: 0px;" class="btn btn-success btn-livechat theme-color waves-effect waves-light" type="submit"><b>Start Chat</b></button>
+              </form>
+              <div class="tb-height-b15 tb-height-lg-b15"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- .tb-live-chat-body -->
+    </div>
+    <!-- .tb-live-chat-wrap -->
+    <div class="tb-toggle-chat-btn theme-color">
+      <i class="flaticon-chat"></i>
+      <i class="flaticon-minimize"></i>
+    </div>
+  </div>
+  <!-- End Toggle Chat -->
+
+  <!-- Scripts -->
+  <script src="./modernizr-3.5.0.min.js.download"></script>
+  <script src="./jquery-1.12.4.min.js.download"></script>
+  <script src="./bootstrap.bundle.min.js.download"></script>
+  <script src="./bootstrap.min.js.download"></script>
+  <script src="./moment.min.js.download"></script>
+  <script src="./smooth-scrollbar.js.download"></script>
+  <script src="./mdb.min.js.download"></script>
+  <script src="./main.min.js.download"></script>
+  <!-- <script src="assets/js/main.js"></script> -->
+  <script src="./socket.io.js.download"></script>
+  <script src="./bootstrap-notify.min.js.download"></script>
+  <!-- Custom Scripts -->
+  <!-- <script src="assets/custom/interaction.min.js"></script> -->
+  <script src="./interaction.js.download"></script>
+  <script src="./location.js.download"></script>
+  <script async="" defer="" src="./js"></script>
+
+
+<div class="hiddendiv common"></div></body></html>
